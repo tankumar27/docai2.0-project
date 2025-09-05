@@ -1,0 +1,162 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle at top left, #0f172a, #000);
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  text-shadow: 0 0 15px #38bdf8, 0 0 30px #0ea5e9;
+}
+
+header .tagline {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+header nav a {
+  margin: 0 1rem;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #facc15;
+}
+
+/* === Upload Section === */
+.upload-section,
+.question-section {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-section:hover,
+.question-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+}
+
+input,
+button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 1rem;
+  font-family: inherit;
+}
+
+input {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+}
+
+button {
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  color: black;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #facc15, #f59e0b);
+  color: black;
+  transform: scale(1.05);
+}
+
+/* === Response Box === */
+.response {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-height: 100px;
+  box-shadow: inset 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+/* === Quick Questions === */
+.quick-questions {
+  margin-top: 1rem;
+}
+
+.quick {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+}
+
+.quick:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* === Feature Cards === */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.4);
+  transform: translateY(-5px);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #facc15;
+}

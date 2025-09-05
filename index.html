@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DocAI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>⚡ DocAI</h1>
+        <p class="tagline">AI-Powered Document Analysis</p>
+        <nav>
+          <a href="#">Help</a>
+          <a href="#">Settings</a>
+        </nav>
+      </header>
+
+      <section class="upload-section">
+        <h2>📄 Extract Knowledge from Google Docs</h2>
+        <p>
+          Paste a Google Doc URL or upload a file for instant AI-powered
+          insights.
+        </p>
+
+        <input type="text" placeholder="Enter Google Doc URL" id="doc-url" />
+        <button id="process-btn">Process Document</button>
+        <div id="upload-status"></div>
+      </section>
+
+      <section class="question-section">
+        <h2>🤖 Ask Questions</h2>
+        <input type="text" placeholder="Your Question" id="user-question" />
+        <button id="ask-btn">Ask</button>
+
+        <div class="quick-questions">
+          <button class="quick">What is the main topic?</button>
+          <button class="quick">Summarize key points</button>
+          <button class="quick">What are the action items?</button>
+        </div>
+
+        <div class="response" id="response-box">
+          <p class="placeholder">
+            No document selected. Upload a document to start asking questions.
+          </p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3>⚡ Powerful Document Analysis</h3>
+          <p>
+            Leverage AI to extract insights and answer questions from your
+            Google Docs.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>⚡ Fast Processing</h3>
+          <p>Quick document analysis and instant AI-powered responses.</p>
+        </div>
+        <div class="feature">
+          <h3>⚡ Secure & Private</h3>
+          <p>
+            Your documents are processed securely with built-in privacy
+            protection.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>⚡ Smart Analysis</h3>
+          <p>
+            Advanced AI understands context and provides accurate, relevant
+            answers.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          DocAI © 2025 | <a href="#">Privacy Policy</a> |
+          <a href="#">Terms</a> | <a href="#">Support</a>
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
